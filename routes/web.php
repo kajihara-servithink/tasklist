@@ -12,6 +12,6 @@ use App\Http\Controllers\TaskController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', [TaskContoroller::class, 'index']);
+Route::get('/', [TaskController::class, 'index']);
 Route::resource('tasks', TaskController::class);
 
