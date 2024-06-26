@@ -9,8 +9,11 @@
         <script src="https://cdn.tailwindcss.com/3.4.1"></script>
     </head>
     <body>
-        <div class="container mx-auto">
-             @yield('content')
+               {{--ナビゲーションバー　--}}
+        {{-- エラーメッセージ --}}
+        @include('commons.error_messages')
+        {{-- 継承先@section('content') --}}
+        @yield('content')
         </div>
     </body>
     
