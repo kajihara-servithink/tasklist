@@ -3,12 +3,6 @@
         <ul class="list-none">
             @foreach ($tasks as $task)
                 <li class="flex items-start gap-x-2 mb-4">
-                    {{-- 投稿の所有者のメールアドレスをもとにGravatarを取得して表示 --}}
-                    <div class="avatar">
-                        <div class="w-12 rounded">
-                            <img src="{{ Gravatar::get($task->user->email) }}" alt="" />
-                        </div>
-                    </div>
                     <div>
                         <div>
                             {{-- 投稿の所有者のユーザー詳細ページへのリンク --}}

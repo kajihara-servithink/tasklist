@@ -8,15 +8,13 @@
     <div class="flex justify-center">
         <form method="POST" action="{{ route('tasks.update', $task->id) }}" class="w-1/2">
             @csrf
-            @method('PUT')
+            @method('PATCH')
             <div class="form-control my-4">
-                    <label for="title" class="label">
+                    <label for="status" class="label">
                         <span class="label-text">ステータス:</span>
                     </label>
-                    <input type="text" name="stastus" value="{{ $task->stastus }}" class="input input-bordered w-full">
+                    <input type="text" name="status" value="{{ $task->status }}" class="input input-bordered w-full">
                 </div>
-                
-
                 <div class="form-control my-4">
                     <label for="content" class="label">
                         <span class="label-text">メッセージ:</span>
